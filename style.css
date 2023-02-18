@@ -8,18 +8,19 @@ h1{
 }
 .main{
     display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
 .left-card{
-    background: url(assests/halie-west-25xggax4bSA-unsplash.jpg);
-    background-origin: border-box;
+    background: url(assests/halie-west-25xggax4bSA-unsplash\ .jpg);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: auto;
     position: relative;
     display: flex;
     width: 40vw;
-    height: 100vh;
+    /* this is a problem*/
 }
 
 .logo-header{
@@ -47,5 +48,61 @@ h1{
 
 .right-card{
     display: flex;
+    flex:1;
     flex-direction: column;
+    
+    position: relative;
+    top: 100px;
+    width: 60vw;
+    height: 90vh;
+    margin-left: 3em;
+    margin-right: 20px;
+    font-size: 1.6rem;
+}
+
+form{
+    width: 80%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.inf{
+    font-weight: bold;
+}
+
+p:nth-child(3){
+    margin: 32px 0;
+}
+
+.row{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.row input[type="text"],
+.row input[type="email"],
+.row input[type="tel"],
+.row input[type="password"]{
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 20vw;
+    padding: 7px;
+    display: block;
+    font-size: 14px;
+} 
+/*
+label{
+    display: block;
+}*/
+.form-in{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
 }
