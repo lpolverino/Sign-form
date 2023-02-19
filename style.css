@@ -113,6 +113,7 @@ input[type="email"]:invalid {
 .btn{
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.7em;
+    margin-top: 20px;
 }
 
 button{
